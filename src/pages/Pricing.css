@@ -1,0 +1,52 @@
+.pricing {
+  text-align: center;
+  padding: 30px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: #0009;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal form {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.modal input {
+  padding: 8px;
+}
+
+@media (max-width: 600px) {
+  .pricing {
+    padding: 15px;
+  }
+}
