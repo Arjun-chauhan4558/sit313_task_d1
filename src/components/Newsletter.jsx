@@ -22,18 +22,15 @@ function Newsletter() {
     setLoading(true);
 
     try {
-      const response = await fetch(
-        "http://localhost:5000/api/newsletter",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            email: email.trim()
-          })
-        }
-      );
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email: email.trim()
+        })
+      });
 
       const data = await response.json();
 
